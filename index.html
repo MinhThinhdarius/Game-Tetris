@@ -1,0 +1,281 @@
+<!DOCTYPE>
+<html lang="vi">
+<head>
+	<title>21130549_Vo_Minh_Thinh_0783833770_DH21DTD</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="tetris.css">
+	<link href="img/tetris-svgrepo-com.png" rel="shortcut icon">
+	<script	type="text/javascript" src="tetris.js"></script>
+</head>
+<body>
+<table style="width: 100%; height: 100%">
+	<tr>
+		<td>
+	<div id="tetris">
+		<div class="left">
+			<div class="menu">
+				<div><a href="#" id="btn-start" title="Press N">New Game</a></div>
+				<div id="tetris-pause">
+					<a href="#" id="btn-pause" title="Press P">Pause</a>
+				</div>
+				<div style="display: none;" id="tetris-resume">
+					<a href="#" id="btn-resume">Resume</a>
+				</div>
+				<div><a href="#" id="btn-about">About</a></div>
+			</div>
+			<div class="stats">
+				<div id="rota"><div class="txt" style="float: left">Rotation:</div> <div id="rota-num">20</div></div>
+				<table cellspacing="0" cellpadding="0">
+				<tr>
+					<td	class="speed">Speed:</td>
+					<td><span id="stat-speed">1</span></td>
+				</tr>
+				<tr>
+					<td	class="score">Score:</td>
+					<td><span id="stat-score">0</span></td>
+				</tr>
+				<tr>
+					<td	class="lines">Line&nbsp; :</td>
+					<td><span id="stat-line">0</span></td>
+				</tr>
+				<tr>
+					<td	class="time">Time:</td>
+					<td style="display: flex"><span id="stat-time">0</span>s</td>
+				</tr>
+
+				</table>
+			</div>
+		</div>
+		<div id="area-game">
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="gridLv5 gridLv6"></div>
+			<div class="gridLv5 gridLv6"></div>
+			<div class="gridLv5 gridLv6"></div>
+			<div class="gridLv5 gridLv6"></div>
+			<div class="gridLv5 gridLv6 lv4" id="bug"></div>
+			<div class="gridLv5 gridLv6"></div>
+			<div class="gridLv5 gridLv6"></div>
+			<div class="gridLv5 gridLv6"></div>
+			<div class="gridLv5 gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="gridLv6"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+			<div class="grid"></div>
+		</div>
+		<div class="right">
+			<div class="key-next">
+				<div id="key-help">
+				<div>New game: Press N</div>
+				<div>Pause: <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Press P</div>
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+						<td>Rotate:</td>
+						<td></td>
+						<td><img src="img/arrow-square-up-svgrepo-com.png" alt=""></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Move:</td>
+						<td><img src="img/arrow-square-left-svgrepo-com.png" alt=""></td>
+						<td><img src="img/arrow-square-down-svgrepo-com.png" alt=""></td>
+						<td><img src="img/arrow-square-right-svgrepo-com.png" alt=""></td>
+					</tr>
+					<tr class="space">
+						<td>Fall:</td>
+						<td colspan="3">
+							<img src="img/space-key-svgrepo-com.png" alt="">
+						</td>
+					</tr>
+				</table>
+				</div>
+				<div id="next-puzzle"></div>
+			</div>
+			<div id="sound">
+				<button class="sound-button">
+					<div id="soundIcon" class="sound"></div>
+				</button>
+			</div>
+			<div id="next">
+				<button class="next-button">
+					<div class="pick-level">Level: <div id="id-level"></div></div>
+						<table>
+							<tbody>
+							<tr>
+								<td><a href="#" id="lv1">1</a></td>
+								<td><a href="#" id="lv2">2</a></td>
+								<td><a href="#" id="lv3">3</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" id="lv4">4</a></td>
+								<td><a href="#" id="lv5">5</a></td>
+								<td><a href="#" id="lv6">6</a></td>
+							</tr>
+							</tbody>
+						</table>
+				</button>
+			</div>
+		</div>
+		<div id="popup-about" class="window">
+			<div class="top">
+				About <span id="btn-close" class="close">x</span>
+			</div>
+			<div class="content" style="margin-top:	1em;">
+				<div style="margin-top:	1em;">
+				<div>NAME_Võ Minh Thịnh
+					BIRTHDAY_30/11/2003
+					RELATIONSHIP_Dating
+					MOBILE_(+84)783833770
+					EMAIL_thinh913011@
+					gmail.com <br>
+					ADDRESS_Tan Dong Commune, Dong District, Tien Giang Province
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		</td>
+	</tr>
+</table>
+	<script>
+	let tetris = new Tetris();
+	//clear thuộc tính
+	tetris.clean();
+	//set X chiều ngang
+	tetris.areaX = 9;
+	//set Y chiều dọc
+	tetris.areaY = 16;
+	//set độ cách các block
+	tetris.unit = 35;
+	</script>
+</body>
+</html>
